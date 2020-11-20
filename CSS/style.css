@@ -87,7 +87,8 @@ button{
 
 .information{
     display: flex;
-    padding-bottom: 32px;
+    padding: 0;
+    margin: 0;
 }
 
 .information .left{
@@ -151,11 +152,75 @@ button{
 
 .information .right .container p{
     padding-top: 12px;
-    padding-bottom: 8px;
     margin:0;
 }
 
 .information .right .read-more{
     color: lightseagreen;
+}
+
+.learning {
+    background-color: darkgray;
+    margin: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.learning h2{
+    padding-bottom: 32px;
+    margin:0;
+    text-align: center;
+}
+.first{
+    display: flex;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.second{
+    display:flex;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.learning .courses {
+    display: flex;
+    flex-direction: row;
+}
+
+.learning .course{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    width: 30%;
+    margin: 14px;
+    margin-top:0;
+    padding: 0;
+}
+
+.learning .course img{
+    width: 100%;
+    height: auto;
+}
+
+.course h4{
+    color: #474747;
+}
+
+.course p {
+    color: darkgray;
+}
+.course h4,
+.course p {
+    padding: 16px;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.course .eight{
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
