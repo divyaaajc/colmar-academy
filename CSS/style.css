@@ -189,7 +189,7 @@ button{
 }
 
 .learning .course{
-    display:flex;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
@@ -223,4 +223,81 @@ button{
     padding-top: 8px;
     padding-bottom: 8px;
 }
+
+.thesis .infor{
+    display:flex; 
+}
+
+.thesis h2{
+    text-align: center;
+    margin: 32px;
+}
+
+.thesis .left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.thesis .left h4,
+.thesis .left p{
+    align-self: flex-start;
+    margin-left: 24px;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+
+.thesis h4{
+    padding-top: 16px;
+    padding-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.thesis .left p{
+    padding-top: 0;
+    width: 80%;
+    color: darkgray;
+    padding-bottom: 32px;
+}
+
+.thesis video{
+    margin: 0px 24px 24px 24px;
+    padding: 0;
+}
+
+.thesis .right{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.thesis .box{
+    display: flex;
+    align-items: center;
+    padding: 16px 16px;
+}
+
+.thesis .txtcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+
+}
+
+.thesis img{
+    height: auto;
+    width: 30%;
+    align-self: center;
+    padding: 16px;
+    margin: 0;
+}
+
+.thesis .right h4{
+    margin: 0;
+    padding-bottom: 16px;
+    font-size: 2.5rem;
+    color: #474747;
+}
+
 
