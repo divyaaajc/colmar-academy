@@ -300,4 +300,25 @@ button{
     color: #474747;
 }
 
+footer{
+    display:flex;
+    border-top: 1px solid darkgray;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-top: 16px;
+    color: #474747;
+    opacity: 50%;
+}
 
+footer p{
+    width: 100%;
+}
+
+footer ul{
+    text-align: right; 
+    width: 100%;
+}
+
+footer li{
+    display: inline-block;
+}
