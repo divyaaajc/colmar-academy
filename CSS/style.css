@@ -1,9 +1,14 @@
 html{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Sawarbi Mincho";
     font-size: 16px;
-    color: rgb (42,42,42);
+    color: saddlebrown;
+    background-color: RGB (223, 212, 197);
+    left: 0;
 }
 
+.mobile {
+    display:none;
+} 
 
 nav{
     position: fixed;
@@ -15,6 +20,10 @@ nav{
     display: inline-flex;
     flex-flow: row nowrap;
     align-items: center;
+}
+
+nav .logo{
+    display:flex;
 }
 
 nav ul {
@@ -33,7 +42,7 @@ nav .sign{
 
 nav .colmar{
     font-weight: bold;
-    color: #202020;
+    color: #474747;
 }
 
 nav p{
@@ -42,14 +51,14 @@ nav p{
 }
 
 .banner {
-    background-color: darkgray;
+    background-color: lightblue;
     width: 100%;
     border: 0;
     display: flex;
 }
 
 .banner img {
-    width: 57.5%;
+    width: 54%;
     padding: 0;
     margin: 32px 24px;
     padding-right: 32px;
@@ -73,22 +82,26 @@ h2{
 
 h4{
     font-size: 1.9rem;
+    opacity: 0.8;
 }
 
 button{
     width: 80%;
-    background-color: #474747;
+    background-color:saddlebrown;
     color: white;
     padding: 8px;
     border: 0;
     height: 50px;
     align-self: flex-start;
+    font-size: 1rem;
+    text-align: center;
 }
 
 .information{
     display: flex;
     padding: 0;
     margin: 0;
+    border-top: 1px solid saddlebrown;
 }
 
 .information .left{
@@ -96,6 +109,7 @@ button{
     padding-right: 34px;
     width: 60%;
     font-size: 1.17rem;
+    
 }
 
 .information .left img {
@@ -115,7 +129,8 @@ button{
 }
 
 .information .right{
-    border: 1px solid grey;
+    border-left: 1px solid saddlebrown;
+    border-right: 1px solid saddlebrown;
     width: 40%;
 }
 
@@ -131,7 +146,7 @@ button{
     width: 100%;
     align-items: center;
     background-color: white;
-    border: 1px solid darkgray;
+    border-top: 1px solid saddlebrown;
     padding: 16px 0px;
 
 }
@@ -160,10 +175,12 @@ button{
 }
 
 .learning {
-    background-color: darkgray;
+    background-color: lightblue;
+    color: #474747;
     margin: 0;
     padding-top: 32px;
     padding-bottom: 32px;
+    border-top: 1px solid saddlebrown;
 }
 
 .learning h2{
@@ -198,6 +215,7 @@ button{
     margin: 14px;
     margin-top:0;
     padding: 0;
+    color: saddlebrown;
 }
 
 .learning .course img{
@@ -209,9 +227,6 @@ button{
     color: #474747;
 }
 
-.course p {
-    color: darkgray;
-}
 .course h4,
 .course p {
     padding: 16px;
@@ -224,6 +239,10 @@ button{
     padding-bottom: 8px;
 }
 
+.thesis{
+    border-top: 1px solid saddlebrown;
+}
+
 .thesis .infor{
     display:flex; 
 }
@@ -231,6 +250,7 @@ button{
 .thesis h2{
     text-align: center;
     margin: 32px;
+    color: #474747;
 }
 
 .thesis .left{
@@ -251,17 +271,17 @@ button{
     padding-top: 16px;
     padding-bottom: 0;
     font-size: 1.5rem;
+    color: #474747;
 }
 
 .thesis .left p{
     padding-top: 0;
     width: 80%;
-    color: darkgray;
     padding-bottom: 32px;
 }
 
 .thesis video{
-    margin: 0px 24px 24px 24px;
+    margin: 0px 24px 5px 24px;
     padding: 0;
 }
 
@@ -275,14 +295,13 @@ button{
     display: flex;
     align-items: center;
     padding: 16px 16px;
+    border: 1px solid saddlebrown;
 }
 
 .thesis .txtcontainer{
     display: flex;
     flex-direction: column;
     justify-items: center;
-
-
 }
 
 .thesis img{
@@ -296,17 +315,16 @@ button{
 .thesis .right h4{
     margin: 0;
     padding-bottom: 16px;
-    font-size: 2.5rem;
     color: #474747;
 }
 
 footer{
     display:flex;
-    border-top: 1px solid darkgray;
+    border-top: 1px solid saddlebrown;;
     margin-left: 32px;
     margin-right: 32px;
     padding-top: 16px;
-    color: #474747;
+    color: saddlebrown;
     opacity: 50%;
 }
 
@@ -321,4 +339,146 @@ footer ul{
 
 footer li{
     display: inline-block;
+}
+
+
+@media only screen and (max-width: 800px){
+
+    nav{
+        height: 64px;
+        left: 0;
+    }
+
+    nav .logo,
+    nav ul {
+        display:none;
+    }
+
+    nav .mobile{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .banner{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner img{
+        position: center;
+        width: 100%;
+        margin:0;
+        padding: 0;
+    }
+
+    button {
+        display: flex;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 32px;
+        font-size: 1.5rem;
+    }
+
+
+    .information .left{
+        display: none;
+    }
+
+    .information .desktop{
+        display:none;
+    }
+
+    .information .right .mobile {
+        display: flex;
+        flex-shrink:0;
+        position: center;
+        width: auto;
+        
+    }
+
+    .information .container{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        
+    } 
+
+    .information .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        flex-shrink:0;
+        padding:0;
+    }
+
+    .information .right .container .txtcontainer{
+        margin:0;
+        padding:0;
+        text-align: left;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .learning .course img,
+    .learning .course p{
+        display: none;
+    }
+
+    .course #mobile{
+        padding: 20px;
+    }
+
+    .learning .course{   
+        width: 80%;
+    }
+
+    .learning .first, 
+    .learning .second{
+        display: flex;
+        flex-direction: column;
+        margin:0;
+        padding:3;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .thesis h4,
+    .thesis p, 
+    .thesis .right{
+        display: none;
+    }
+
+    .thesis .left{
+        width:100%;
+    }
+
+    .thesis video{
+        position: center;
+        width: 100%;
+        height: auto;
+        margin:0;
+        padding-bottom: 16px;
+    }
+
+    footer ul{
+        display:none;
+    }
+
+    footer p{
+        text-align: center;
+    }
+
 }
